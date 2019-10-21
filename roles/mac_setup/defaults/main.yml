@@ -1,0 +1,56 @@
+--- 
+brew_pkgs:
+  - ack
+  - ansible-lint
+  - bat
+  - curl
+  - diff-so-fancy
+  - expect
+  - flake8
+  - fping
+  - git
+  - gpg
+  - htop
+  - httpie
+  - ipcalc
+  - ipcalc
+  - iperf
+  - iperf3
+  - ipmitool
+  - jsonlint
+  - keychain
+  - lnav
+  - lynx
+  - mas  # this is a dependency, be sure to keep it
+  - mtr
+  - netcat
+  - nmap
+  - openssl
+  - python3
+  - sshpass
+  - telnet
+  - tmux
+  - tree
+  - vim
+  - wget
+  - zsh
+  - zsh-completions
+
+brew_casks: 
+  - alfred
+  - bettertouchtool
+  - docker
+  - github
+  - slack
+  - spotify
+  - visual-studio-code
+  - vlc
+  - vmware-remote-console
+  - wireshark
+
+   
+download_these:
+   iterm2:
+     name: iTerm 2
+     url: https://www.iterm2.com/downloads/stable/latest
+     dest: "{{gen.myhome}}/Downloads/iTerm2.zip"
