@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  tasks:
+    - homebrew:
+        name: [
+         'ipcalc',
+         'iperf',
+         'fping',
+         'iperf3',
+         'netcat',
+         'nmap',
+         'sshpass',
+         'telnet',
+         'tree',
+         'openssl',
+         'wget',
+         'zsh',
+         'python',
+         'lynx',
+         ]
+        state: present
+        update_homebrew: yes
+      
