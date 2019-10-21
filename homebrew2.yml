@@ -17,6 +17,8 @@
          'zsh',
          'python',
          'lynx',
+         'httpie',
+         'curl',
          ]
         state: present
         update_homebrew: yes
