@@ -1,0 +1,16 @@
+---
+
+## jtmbp.yml - provision a new workstation
+## first attempt 10.21.19 JT
+
+# pass options in the form of tags:
+# os type: 'macos' supports:
+# 'brew' - install homebrew & packages/taps/casks 
+# 'downloads - get dmg files for things not in brew
+# 'defaults' - set some macOS defaults 
+
+
+ - hosts: jtmbp
+   gather_facts: yes
+   roles:
+     - macsetup
