@@ -1,4 +1,7 @@
 --- 
+gen:
+  myhome: "{{ lookup('env','HOME') }}"
+  
 brew_pkgs:
   - ack
   - ansible-lint
