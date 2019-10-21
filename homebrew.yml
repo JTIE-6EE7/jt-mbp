@@ -1,23 +1,25 @@
 ---
 - hosts: localhost
-  tasks:  
-    - name: Install libraries with homebrew
-      homebrew: name={{ item }} state=present
-      with_items:
-        - bzip2
-        - wget
-        - ipcalc
-        - iperf
-        - fping
-        - iperf3
-        - netcat
-        - nmap
-        - ntopng
-        - sshpass
-        - telnet
-        - tree
-        - openssl
-        - wget
-        - zsh
-        - python
-        - lynx
+  tasks:
+    - homebrew:
+        name: [
+          'curl',
+          'fping',
+          'httpie',
+          'ipcalc',
+          'iperf',
+          'iperf3',
+          'lynx',
+          'netcat',
+          'nmap',
+          'openssl',
+          'python',
+          'sshpass',
+          'telnet',
+          'tree',
+          'wget',
+          'zsh',
+         ]
+        state: present
+        update_homebrew: yes
+      
