@@ -9,7 +9,6 @@
 # 'downloads - get dmg files for things not in brew
 # 'defaults' - set some macOS defaults 
 
-
  - hosts: jtmbp
    gather_facts: yes
    roles:
