@@ -16,7 +16,6 @@ brew_pkgs:
   - htop
   - httpie
   - ipcalc
-  - ipcalc
   - iperf
   - iperf3
   - ipmitool
@@ -30,7 +29,6 @@ brew_pkgs:
   - nmap
   - openssl
   - python3
-  - sshpass
   - telnet
   - tmux
   - tree
