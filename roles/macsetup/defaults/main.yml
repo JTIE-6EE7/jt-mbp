@@ -64,7 +64,7 @@ brew_casks:
   - unetbootin
   - vagrant
   - visual-studio-code
+  - vlc
   - vmware-fusion
   - webex-teams
   - wireshark
-
