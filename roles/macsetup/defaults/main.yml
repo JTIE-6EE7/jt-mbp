@@ -41,17 +41,25 @@ brew_casks:
   - alfred
   - bettertouchtool
   - docker
+  - dropbox
+  - evernote
+  - firefox
   - github
+  - google-chrome
+  - iterm2
+  - keepassx
+  - omnidisksweeper
+  - pomotodo
+  - postman
+  - private-internet-access
+  - securid
   - slack
-  - spotify
+  - sublime-text
+  - tftpserver
+  - unetbootin
+  - vagrant
   - visual-studio-code
-  - vlc
-  - vmware-remote-console
+  - vmware-fusion
+  - webex-teams
   - wireshark
 
-   
-download_these:
-   iterm2:
-     name: iTerm 2
-     url: https://www.iterm2.com/downloads/stable/latest
-     dest: "{{gen.myhome}}/Downloads/iTerm2.zip"
