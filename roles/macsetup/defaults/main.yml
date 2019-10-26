@@ -40,7 +40,9 @@ brew_pkgs:
   - vim
   - wget
   - zsh
+  - zsh-autosuggestions
   - zsh-completions
+  - zsh-syntax-highlighting
 
 brew_casks: 
   - alfred
