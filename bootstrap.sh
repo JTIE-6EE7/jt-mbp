@@ -15,6 +15,6 @@ if uname -s | grep -q Darwin; then
 
   # TODO: menu for tags, to run ansible-playbook right here? 
 
-  ansible-playbook -i inventory jtmbp.yml -t macos,brew
+  ansible-playbook -i inventory jtmbp.yml -t macos,brew,zsh
 fi 
 

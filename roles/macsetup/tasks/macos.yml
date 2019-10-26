@@ -27,18 +27,17 @@
     name: "{{ brew_casks }}"
     state: present
 
-
 - name: Cloning  oh-my-zsh
+  tags: zsh
   git:
     repo=https://github.com/robbyrussell/oh-my-zsh
     dest=~/.oh-my-zsh
   when: installation|success
   register: cloning
-  sudo: no
 
 - name: Creating new ~/.zshrc
+  tags: zsh
   copy:
     src=~/.oh-my-zsh/templates/zshrc.zsh-template
     dest=~/.zshrc
   when: cloning|success
-  sudo: no
