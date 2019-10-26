@@ -32,7 +32,7 @@
   git:
     repo=https://github.com/robbyrussell/oh-my-zsh
     dest=~/.oh-my-zsh
-  when: installation|success
+  when: result is success
   register: cloning
 
 - name: Creating new ~/.zshrc
@@ -40,4 +40,4 @@
   copy:
     src=~/.oh-my-zsh/templates/zshrc.zsh-template
     dest=~/.zshrc
-  when: cloning|success
+  when: result is success
