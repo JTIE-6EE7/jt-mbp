@@ -6,6 +6,7 @@ brew_pkgs:
   - ack
   - ansible-lint
   - bat
+  - bzip2
   - curl
   - diff-so-fancy
   - expect
@@ -25,13 +26,17 @@ brew_pkgs:
   - lynx
   - mas  # this is a dependency, be sure to keep it
   - mtr
+  - mysql
   - netcat
   - nmap
   - openssl
+  - pcre
+  - pcre2
   - python3
   - telnet
   - tmux
   - tree
+  - sqlite
   - vim
   - wget
   - zsh
