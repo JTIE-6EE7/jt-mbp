@@ -30,14 +30,12 @@
 - name: Cloning  oh-my-zsh
   tags: zsh
   git:
-    repo=https://github.com/robbyrussell/oh-my-zsh
-    dest=~/.oh-my-zsh
-  when: result is success
-  register: cloning
-
+    repo: https://github.com/robbyrussell/oh-my-zsh
+    dest: ~/.oh-my-zsh
+  
 - name: Creating new ~/.zshrc
   tags: zsh
   copy:
-    src=~/.oh-my-zsh/templates/zshrc.zsh-template
-    dest=~/.zshrc
-  when: result is success
+    src: ~/.oh-my-zsh/templates/zshrc.zsh-template
+    dest: ~/.zshrc
+  
