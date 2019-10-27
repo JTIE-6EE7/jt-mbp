@@ -27,7 +27,7 @@
     name: "{{ brew_casks }}"
     state: present
 
-- name: Cloning  oh-my-zsh
+- name: Cloning oh-my-zsh
   tags: zsh
   git:
     repo: https://github.com/robbyrussell/oh-my-zsh
@@ -38,4 +38,15 @@
   copy:
     src: ~/.oh-my-zsh/templates/zshrc.zsh-template
     dest: ~/.zshrc
-  
+
+- name: Cloning iterm color schemes
+  tags: zsh
+  git:
+    repo: https://github.com/powerline/fonts.git
+    dest: ~/.fonts
+
+- name: Cloning iterm color schemes
+  tags: zsh
+  git:
+    repo: https://github.com/mbadolato/iTerm2-Color-Schemes.git
+    dest: ~/.iTerm2-Color-Schemes
