@@ -51,6 +51,7 @@ brew_casks:
   - dropbox
   - evernote
   - firefox
+  - fuzzytime
   - github
   - google-chrome
   - iterm2
